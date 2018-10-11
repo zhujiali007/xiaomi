@@ -1,0 +1,9 @@
+html { font-family:"微软雅黑";}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,figure{margin:0;padding:0;}
+body{-webkit-overflow-scrolling:touch;text-align:left;max-height: 100%;}
+a,a:hover{ text-decoration: none; outline: none;}
+ul,li,ol{list-style:none;}
+img{ border: none; max-width:100%;}
+input,select,textarea{border:none;outline:none;background:none;}
+em,i{font-style:normal}
+h1,h2,h3,h4,h5,h6{font-weight:normal}

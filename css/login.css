@@ -1,0 +1,67 @@
+html { font-family:"微软雅黑";}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,figure{margin:0;padding:0;}
+body{-webkit-overflow-scrolling:touch;text-align:left;max-height: 100%;}
+a,a:hover{ text-decoration: none; outline: none;}
+ul,li,ol{list-style:none;}
+img{ border: none; max-width:100%; }
+input,select,textarea{border:none;outline:none;background:none;}
+em,i{font-style:normal}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+#head{width: 100%;height: 98px;}
+.top{width: 1130px;margin: 0 auto;}
+#banner{width: 100%;height: 486px;background: url(../images/denglu.jpg) no-repeat top center;
+    background-size: 2560px 600px;}
+.banner_box{width: 1130px;margin: 0 auto;position: relative;}
+.banner_box .form,.form_sm{width: 410px;height: 500px;background: #fff;
+    position: absolute;right:0;top: 32px;text-align: center;}
+.form_sm{display: none;}
+.form h2 a,.form_sm h2 a{font-size: 24px;float: left;width: 205px;text-align: center;display: block;
+    margin: 30px 0 27px;color: #666;}
+.form a:hover,.form_sm a:hover{color: #f66600;}
+.form h2:first-child a{border-right: 1px solid #ccc;width: 204px;color: #f66600;}
+.form_sm h2:first-child a{border-right: 1px solid #ccc;width: 204px;}
+.form_sm h2:nth-child(2) a{color:#f66600;}
+.form_sm img{width: 180px;height: 180px;margin-top: 125px;}
+.form_sm .text{font-size: 12px;color: #757575;margin-top: 22px;}
+.form_sm .text a{font-size: 12px;color: #f66600;height: 16px;}
+.form_sm p{font-size: 12px;color: #757575;}
+.form_box{width: 410px;text-align: center;}
+.form_box input{width: 320px;height:50px;border: 1px solid #ccc;margin: 8px auto;
+    padding:0 15px;color: #ccc;font-size: 14px;}
+.form_box .login-btn{width: 350px;height: 50px;background: #f66600;border: 0;
+    color: #fff;text-align: center;margin-top: 16px;}
+.p1{width: 130px;font-size: 14px;text-align: left;margin-left: 32px;
+    margin-top: 12px;float: left;}
+.p1 a{color: #f66600;}
+span{width:150px;font-size: 14px;float: right;display: block;
+    height: 24px;margin-top: 12px;margin-right: 10px;}
+span p{float: left;width: 70px;text-align: center;}
+span .p2{border-right: 1px solid #666;width: 65px;}
+span a{color: #666;}
+span a:hover{color: #f66600;}
+.banner_foot{width: 310px;margin: 0 auto;margin-top: 125px;}
+.ft_top{border-top: 1px solid #e0e0e0;padding-top: 10px;width: 310px;font-size: 14px;
+color: #ccc;}
+fieldset{border: 0;}
+.icon{width: 212px;height: 30px;margin: 10px auto;}
+.icon .qq,.wbo,.wx,.zfb{width: 30px;height: 30px;float: left;margin-right:30px; }
+.icon .qq{background:#0288d1;border-radius: 50%;}
+.icon .wbo{background: #d32f2f;border-radius: 50%;}
+.icon .zfb{background: #00aaee;border-radius: 50%;}
+.icon .wx{background: #00d20d;border-radius: 50%;}
+.qq div,.wbo div,.wx div,.zfb div{margin:5px auto;width:14px;height:18px;
+    background: url(../images/icons_type.png) no-repeat -21px center;}
+.icon .wx{margin-right: 0;}
+.wbo div{background: url(../images/icons_type.png) no-repeat -38px center;width: 18px;}
+.zfb div{background: url(../images/icons_type.png) no-repeat -57px center;width: 25px;}
+.wx div{background: url(../images/icons_type.png) no-repeat -84px center;width: 23px;}
+#footer{width: 100%;}
+#footer_box{width: 1130px;margin: 0 auto;}
+#footer ul{width: 341px;margin: 0 auto;margin-top:180px;font-size: 14px;height: 24px;line-height: 24px;}
+#footer ul li{float: left;}
+#footer ul li a{display: block;padding:0 14px;border-right: 1px solid #e0e0e0;color:#666;}
+#footer ul li a:hover{color: #f66600;}
+#footer .footer_bottom{width: 100%;}
+#footer p{width: 570px;font-size: 14px;margin: 10px auto;height: 24px;line-height: 24px;color:#666;}
+#footer img{width: 20px;height: 20px;}
+.active{display: none;}

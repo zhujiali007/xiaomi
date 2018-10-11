@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+
+        #tuijian .con_btn{position: absolute;width: 92px;height: 24px;right: 10px;top: 30px;}
+        #tuijian .swiper-button-prev{display:block;background: url(images/con-1bg1_34.jpg) no-repeat;width: 36px;height: 24px;
+	        position: absolute;border: 0;right: 46px;top: 40px;}
+        #tuijian .swiper-button-next{display:block;background: url(images/con-1bg2_35.jpg) no-repeat;width:36px;height:24px;
+            position:absolute;right:10px;top: 40px;border: 0;}
+        
+        </style>
+</head>
+
+<body>
+    <div id="top">
+        <div class="nav-top">
+            <ul class="left">
+                <li><a href="#">小米商城</a></li>
+                <li><a href="#">MIUI</a></li>
+                <li><a href="#">loP</a></li>
+                <li><a href="#">云服务</a></li>
+                <li><a href="#">水滴</a></li>
+                <li><a href="#">金融</a></li>
+                <li><a href="#">有品</a></li>
+                <li><a href="#">Select Region</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="#">消息通知</a></li>
+                <li><a href="#">购物车<span>（0）</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="con">
+        <div id="nav">
+            <div class="left1">
+                <img src="images/logo_03.png" alt="">
+            </div>
+            <ul class="center">
+                <li class="li1">
+                    <a href="#">小米手机</a>
+                    <ul class="first_ul">
+                        <li class="child">
+                            <p>新品</p>
+                            <a href=""><img src="images/1.jpg"></a>
+                            <h3>红米Pro<br /><span>999元起</span></h3>
+                        </li>
+                        <li class="child">
+                            <p>新品</p>
+                            <a href=""><img src="images/2.png"></a>
+                            <h3>红米Pro<br /><span>999元起</span></h3>
+                        </li>
+                        <li class="child">
+                            <a href=""><img src="images/3.jpg"></a>
+                            <h3>红米Pro<br /><span>999元起</span></h3>
+                        </li>
+                        <li class="child_last">
+                            <a href=""><img src="images/4.jpg"></a>
+                            <h3>红米Pro<br /><span>999元起</span></h3>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="#">红米</a>
+                    <ul class="first_ul">
+                            <li class="child">
+                                <p>新品</p>
+                                <a href=""><img src="images/1.jpg"></a>
+                                <h3>红米Pro<br /><span>999元起</span></h3>
+                            </li>
+                            <li class="child">
+                                <p>新品</p>
+                                <a href="details.html"><img src="images/2.png"></a>
+                                <h3>红米Pro<br /><span>999元起</span></h3>
+                            </li>
+                            <li class="child">
+                                <a href=""><img src="images/3.jpg"></a>
+                                <h3>红米Pro<br /><span>999元起</span></h3>
+                            </li>
+                            <li class="child_last">
+                                <a href=""><img src="images/4.jpg"></a>
+                                <h3>红米Pro<br /><span>999元起</span></h3>
+                            </li>
+                        </ul>
+                </li>
+                <li><a href="#">笔记本</a></li>
+                <li><a href="#">电视</a></li>
+                <li><a href="#">盒子</a></li>
+                <li><a href="#">新品</a></li>
+                <li><a href="#">路由器</a></li>
+                <li><a href="#">智能硬件</a></li>
+            </ul>
+            <form class="right1">
+                <input class="text" type="text" value="">
+                <input type="submit" class="submit" value="">
+            </form>
+        </div>
+
+        <div id="banner" class="swiper-container">
+            <ul class="banner-left nav1">
+                <li class="nav12">
+                    <a href="#">手机 电话卡</a>
+                    <div class="nav21">
+                        <ul class="first">
+                            <li><a href="#">笔记本Air12.5''</a></li>
+                            <li><a href="#">笔记本Air13.3'' 独显</a></li>
+                            <li><a href="#">笔记本Air13.3'' 集显</a></li>
+                            <li><a href="#">笔记本pro15.6'' </a></li>
+                            <li><a href="#">USB-C电源适配器</a></li>
+                            <li><a href="#">USB-C转接器</a></li>
+                        </ul>
+                        <ul class="second">
+                            <li><a href="#">VGA千兆网口转接器</a></li>
+                            <li><a href="#">小米笔记本内胆包</a></li>
+                            <li><a href="#">悦米机械键盘</a></li>
+                            <li><a href="#">小米便携鼠标</a></li>
+                            <li><a href="#">小米无线鼠标</a></li>
+                            <li><a href="#">鼠标垫</a></li>
+                        </ul>
+                        <ul class="third">
+                            <li><a href="#">DisplayPort转接器</a></li>
+                        </ul>
+                    </div>
+                    <div class="iconfont icon-arrow-right"></div>
+                </li>
+                <li class="nav12">
+                    <a href="#">手机 电话卡</a>
+                    <div class="nav21">
+                        <ul class="first">
+                            <li><a href="#">笔记本Air12.5''</a></li>
+                            <li><a href="#">笔记本Air13.3'' 独显</a></li>
+                            <li><a href="#">笔记本Air13.3'' 集显</a></li>
+                            <li><a href="#">笔记本pro15.6'' </a></li>
+                            <li><a href="#">USB-C电源适配器</a></li>
+                            <li><a href="#">USB-C转接器</a></li>
+                        </ul>
+                        <ul class="second">
+                            <li><a href="#">VGA千兆网口转接器</a></li>
+                            <li><a href="#">小米笔记本内胆包</a></li>
+                            <li><a href="#">悦米机械键盘</a></li>
+                            <li><a href="#">小米便携鼠标</a></li>
+                            <li><a href="#">小米无线鼠标</a></li>
+                            <li><a href="#">鼠标垫</a></li>
+                        </ul>
+                        <ul class="third">
+                            <li><a href="#">DisplayPort转接器</a></li>
+                        </ul>
+                    </div>
+                    <div class="iconfont icon-arrow-right"></div>
+                </li>
+                <li><a href="#">手机 电话卡</a>
+                    <div class="iconfont icon-arrow-right"></div>
+                </li>
+                <li><a href="#">手机 电话卡</a>
+                    <div class="iconfont icon-arrow-right"></div>
+                </li>
+                <li><a href="#">手机 电话卡</a>
+                    <div class="iconfont icon-arrow-right"></div>
+                </li>
+                <li><a href="#">手机 电话卡</a>
+                    <div class="iconfont icon-arrow-right"></div>
+                </li>
+                <li><a href="#">手机 电话卡</a>
+                    <div class="iconfont icon-arrow-right"></div>
+                </li>
+                <li><a href="#">手机 电话卡</a>
+                    <div class="iconfont icon-arrow-right"></div>
+                </li>
+                <li><a href="#">手机 电话卡</a>
+                    <div class="iconfont icon-arrow-right"></div>
+                </li>
+            </ul>
+            <ul class="ul swiper-wrapper">
+                <li class="swiper-slide"><img src=" images/banner_1.jpg" alt=""></li>
+                <li class="swiper-slide"><img src=" images/banner_2.jpg" alt=""></li>
+                <li class="swiper-slide"><img src=" images/banner_3.jpg" alt=""></li>
+                <li class="swiper-slide"><img src=" images/banner_4.jpg" alt=""></li>
+                <li class="swiper-slide"><img src=" images/banner_5.jpg" alt=""></li>
+            </ul>
+            <ol class="ol swiper-pagination">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <a href="javascript:;" class="left-btn swiper-button-prev"></a>
+            <a href="javascript:;" class="right-btn swiper-button-next"></a>
+        </div>
+        <div id="content">
+            <ul class="left3">
+                <li><a href="#">选购手机</a></li>
+                <li><a href="#">企业团购</a></li>
+                <li><a href="#">F卡通道</a></li>
+                <li><a href="#">米粉卡</a></li>
+                <li><a href="#">以旧换新</a></li>
+                <li><a href="#">话费充值</a></li>
+            </ul>
+            <div class="right2">
+                <a href="#"><img src="images/con1_1.jpg" alt=""></a>
+                <a href="#"><img src="images/con2_1.jpg" alt=""></a>
+                <a href="#"><img src="images/con3_1.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="con-1">
+            <p>小米闪购</p>
+            <ul class="con111">
+                <li class="first_li"><a href="#">
+                        <p class="p1">00:00场</p>
+                        <img src="images/shandian.png" alt="">
+                        <p class="p3">距离开始还有</p>
+                        <div class="time time1">00</div>
+                        <div class="time time2">00</div>
+                        <div class="time time3">00</div>
+                        <span>:</span>
+                        <span class="last_s">:</span>
+                    </a>
+
+                </li>
+                <li><a href="#"><img src="images/img02.jpg" alt="">
+                        <p class="p1">红米5A</p>
+                        <p class="p2">8天超长待机，137g轻巧机身</p>
+                        <p class="p3">599元</p>
+                    </a></li>
+                <li><a href="#"><img src="images/img03.jpg" alt="">
+                        <p class="p1">小米6</p>
+                        <p class="p2">变焦双摄，4轴防抖</p>
+                        <p class="p3">2299元起</p>
+                    </a></li>
+                <li><a href="#"><img src="images/img04.jpg" alt="">
+                        <p class="p1">小米电视4A 43寸 标准版</p>
+                        <p class="p2">全高清HDR 四核高性能处理器</p>
+                        <p class="p3">1999元</p>
+                    </a></li>
+                <li><a href="#"><img src="images/img05.jpg" alt="">
+                        <p class="p1">小米笔记本</p>
+                        <p class="p2">更轻更薄，像杂志一样随身携带</p>
+                        <p class="p3">3599元起</p>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cons1">
+        <img src="images/con1.jpg" alt="">
+    </div>
+    <div id="con_box">
+        <div id="content2">
+            <div id="phone">
+                <div class="con_top">
+                    <p>手机</p>
+                    <a href="#">查看更多
+                        <i class="iconfont icon-jiantou"></i></a>
+                </div>
+
+                <div class="left4">
+                    <a><img src="images/left1.jpg" alt=""></a>
+                </div>
+                <ul class="right4">
+                    <li>
+                        <a href=""><img src="images/1.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/2.png" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                    </li>
+                    <li>
+                        <a href=""><img src="images/3.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                    </li>
+                    <li>
+                        <a href=""><img src="images/4.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                    </li>
+                    <li>
+                        <a href=""><img src="images/5.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                    </li>
+                    <li>
+                        <a href=""><img src="images/6.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                    </li>
+                    <li>
+                        <a href=""><img src="images/7.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                    </li>
+                    <li>
+                        <a href=""><img src="images/7.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cons1">
+            <img src="images/con2.jpg" alt="">
+        </div>
+        <div id="content3">
+            <div id="jiadian">
+                <div class="con_top">
+                    <p>家电</p>
+                    <ul class="jiadian_ul">
+                        <li><a href="#" class="li7 active">热门</a></li>
+                        <li><a href="#" class="li8">电视影音</a></li>
+                        <li><a href="#" class="li9">电脑</a></li>
+                        <li><a href="#" class="li10">家居</a></li>
+                    </ul>
+                </div>
+
+                <ul class="left4">
+                    <li><a><img src="images/left2.jpg" alt=""></a></li>
+                    <li><a><img src="images/left3.jpg" alt=""></a></li>
+                </ul>
+                <ul class="right4 li7_block">
+                    <li class="li_display">
+                        <a href=""><img src="images/2.png" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/1.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/6.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/1.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/5.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/6.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/3.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/1.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right4 li8_block">
+                    <li class="li_display">
+                        <a href=""><img src="images/1.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/2.png" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/3.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/4.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/5.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/6.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/7.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/7.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right4 li9_block">
+                    <li class="li_display">
+                        <a href=""><img src="images/7.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/2.png" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/6.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/3.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/4.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/7.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/3.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/7.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right4 li10_block">
+                    <li class="li_display">
+                        <a href=""><img src="images/4.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/2.png" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/1.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/4.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/7.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/6.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/5.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                    <li class="li_display">
+                        <a href=""><img src="images/7.jpg" alt=""></a>
+                        <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        <div class="right4_box">
+                            <h5>尺寸正好，画质清晰，送货上门，非常满意</h5>
+                            <h6>来自大亨的评论</h6>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cons1">
+            <img src="images/con3.jpg" alt="">
+        </div>
+        <div id="tuijian" class="swiper-show ">
+            <div class="con_top">
+                <p>为你推荐</p>
+                <div class="con_btn">
+                    <a href="javascript:;" class="left-btn1 swiper-button-prev"></a>
+                    <a href="javascript:;" class="right-btn1 swiper-button-next"></a>
+                </div>
+            </div>
+            <ul class="ul swiper-wrapper">
+                <li class="swiper-slide">
+                    <ul class="right4">
+                        <li>
+                            <a href=""><img src="images/1.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/2.png" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/3.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/4.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/5.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul class="right4">
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米9 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul class="right4">
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul class="right4">
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li class="swiper-slide">
+                    <ul class="right4">
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+
+                        </li>
+                        <li>
+                            <a href=""><img src="images/7.jpg" alt=""></a>
+                            <h3>小米8 青春版 4GB+64GB<p>潮流镜面渐变色 2400万自拍旗舰</p><span>1399元</span></h3>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="content7">
+            <div id="vedio">
+                <div class="con_top">
+                    <p>视频</p>
+                    <a href="#">查看更多
+                        <i class="iconfont icon-jiantou"></i></a>
+                </div>
+                <ul class="vedio_box">
+                    <li>
+                        <a href="videoes/ai.mp4">
+                            <img src="images/video1.jpg" alt="" title="点击查看视频">
+                            <i class="iconfont icon-bofang"></i>
+                        </a>
+                        <h3>一团火</h3>
+                        <p>小米创业8年内部纪念片(手机篇)</p>
+
+                    </li>
+                    <li>
+                        <a href="videoes/ai.mp4">
+                            <img src="images/video2.jpg" alt="" title="点击查看视频">
+                            <i class="iconfont icon-bofang"></i>
+                        </a>
+                        <h3>小米8,一款与众不同的手机</h3>
+                        <p>小米创业8年内部纪念片(手机篇)</p>
+                    </li>
+                    <li>
+                        <a href="videoes/ai.mp4">
+                            <img src="images/video3.jpg" alt="" title="点击查看视频">
+                            <i class="iconfont icon-bofang"></i>
+                        </a>
+                        <h3>小米MIX2s一款，一面科技一面艺术</h3>
+                        <p>小米创业8年内部纪念片(手机篇)</p>
+                    </li>
+                    <li>
+                        <a href="videoes/ai.mp4">
+                            <img src="images/video4.jpg" alt="" title="点击查看视频">
+                            <i class="iconfont icon-bofang"></i>
+                        </a>
+                        <h3>生活无所不在的小爱同学</h3>
+                        <p>小米创业8年内部纪念片(手机篇)</p>
+                    </li>
+                </ul>
+                <div id="footer_top">
+                    <ul class="top_f">
+                        <li>
+                            <a href="">预约维修服务<i class="iconfont icon-weixiu"></i></a>
+
+                        </li>
+                        <li>
+                            <a href="">7天无理由退货<i class="iconfont icon-sevenday"></i></a>
+
+                        </li>
+                        <li>
+                            <a href="">15天无理由换货<i class="iconfont icon-xiangqing-shiwutiantui"></i></a>
+
+                        </li>
+                        <li>
+                            <a href="">满150元包邮<i class="iconfont icon-lipin"></i></a>
+
+                        </li>
+                        <li>
+                            <a href="">520余家售后网点<i class="iconfont icon-dingwei"></i></a>
+
+                        </li>
+                    </ul>
+                    <ul class="b_f">
+                        <li>
+                            <ul class="b_fbox">
+                                <li>帮助中心</li>
+                                <li><a href="">账户管理</a></li>
+                                <li><a href="">购物指南</a></li>
+                                <li><a href="">订单操作</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="b_fbox">
+                                <li>服务支持</li>
+                                <li><a href="">售后政策</a></li>
+                                <li><a href="">自助服务</a></li>
+                                <li><a href="">相关下载</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="b_fbox">
+                                <li>线下门店</li>
+                                <li><a href="">小米之家</a></li>
+                                <li><a href="">服务网点</a></li>
+                                <li><a href="">授权体验店</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="b_fbox">
+                                <li>关于小米</li>
+                                <li><a href="">小米之家</a></li>
+                                <li><a href="">服务网点</a></li>
+                                <li><a href="">授权体验店</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="b_fbox">
+                                <li>关注我们</li>
+                                <li><a href="">小米之家</a></li>
+                                <li><a href="">服务网点</a></li>
+                                <li><a href="">授权体验店</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="b_fbox">
+                                <li>特色服务</li>
+                                <li><a href="">小米之家</a></li>
+                                <li><a href="">服务网点</a></li>
+                                <li><a href="">授权体验店</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="b_left">
+                        <h2>400-100-5678</h2>
+                        <p>周一至周日8:00-18:00</p>
+                        <p>(仅收市话费)</p>
+                        <a href=""><span>联系客服</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="content8">
+            <div class="footer">
+                <div class="footer_left">
+                    <img src="images/logo_03.png" alt="">
+                </div>
+                <div class="footer_center">
+                    <ul>
+                        <li><a href="#">小米商城</a></li>
+                        <li><a href="#">MIUI</a></li>
+                        <li><a href="#">米家</a></li>
+                        <li><a href="#">米聊</a></li>
+                        <li><a href="#">多看</a></li>
+                        <li><a href="#">游戏</a></li>
+                        <li><a href="#">路由器</a></li>
+                        <li><a href="#">米粉卡</a></li>
+                        <li><a href="#">政企服务</a></li>
+                        <li><a href="#">小米天猫店</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">问题反馈</a></li>
+                        <li><a href="#">廉政举报</a></li>
+                        <li><a href="#">Select Region</a></li>
+                    </ul>
+                    <p>&copy;mi.com京ICP证110507号 <a href="#">京ICP备10046444号</a> <a href="#">京公网安备11010802020134号</a>
+                        <a href="#">京网文[2017]1530-131号营业执照</a><br />违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                    </p>
+                </div>
+                <div class="footer_right">
+                    <ul>
+                        <li><a href="#"><img src="images/foot1.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/foot2.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/foot3.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/foot4.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/foot5.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script>
+        index.init();
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            effect: 'fade',
+            autoplay: 2000,
+            autoplayDisableOnInteraction: false,
+            fade: {
+                crossFade: true,
+            },
+            loop: true,
+        });
+        var mySwiper = new Swiper('.swiper-show', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+        })
+    </script>
+</body>
+
+</html>

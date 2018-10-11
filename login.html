@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div id="head">
+        <div class="top"><img src="images/mistore_logo.png" alt=""></div>
+    </div>
+    <div id="banner">
+        <ul class="banner_box">
+            <li class="form">
+                <div class="form_top">
+                    <h2 class="h2_1">
+                        <a href="#">账号登录</a></h2>
+                    <h2 class="h2_2"><a href="#">扫码登录</a></h2>
+                </div>
+                <form action="" method="GET" class="form_box" onsubmit="return false" autocomplete="off">
+                    <input type="text" class="inpt" name="username" placeholder="邮箱/手机号码/小米ID">
+                    <input type="password" class="inpt" name="password" placeholder="密码">
+                    <button type="submit" name="login-btn" class="login-btn">登录</button>
+                </form>
+
+                <p class="p1"><a href="#">手机短信登录、注册</a></p>
+                <span>
+                    <p class="p2"><a href="register.html">立即注册</a></p>
+                    <p class="p3"><a href="#">忘记密码?</a></p>
+                </span>
+                <div class="banner_foot">
+                    <fieldset class="ft_top">
+                        <legend class="ft_tep" align="center">其他方式登录</legend>
+                    </fieldset>
+                    <div class="icon">
+                        <div class="qq">
+                            <div></div>
+                        </div>
+                        <div class="wbo">
+                            <div></div>
+                        </div>
+                        <div class="zfb">
+                            <div></div>
+                        </div>
+                        <div class="wx">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="form_sm">
+                <div class="form_top">
+                    <h2 class="h2_1"><a href="#">账号登录</a></h2>
+                    <h2 class="h2_2"><a href="#">扫码登录</a></h2>
+                </div>
+                <img src="images/ewm.png" alt="">
+                <div class="text">使用<a>小米商城APP</a>扫一扫</div>
+                <p>小米手机可打开【设置】>【小米账号】>扫码登录</p>
+            </li>
+        </ul>
+    </div>
+    <div id="footer">
+        <div id="footer_box">
+            <ul class="footer_top">
+                <li><a href="#">简体</a></li>
+                <li><a href="#">繁体</a></li>
+                <li><a href="#">英文</li>
+                <li><a href="#" target="_blank">常见问题</a></li>
+                <li><a href="#" target="_blank">隐私政策</a></li>
+            </ul>
+            <div class="footer_bottom">
+                <p>小米公司版权所有-京ICP备10046444-<img src="images/ghs.png" alt="">京公网安备110802020134号-京ICP证110507号</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/ajax.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        login.init('.form_box');
+    </script>
+</body>
+
+</html>
