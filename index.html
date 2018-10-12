@@ -49,55 +49,9 @@
                 <img src="images/logo_03.png" alt="">
             </div>
             <ul class="center">
-                <li class="li1">
-                    <a href="#">小米手机</a>
-                    <ul class="first_ul">
-                        <li class="child">
-                            <p>新品</p>
-                            <a href=""><img src="images/1.jpg"></a>
-                            <h3>红米Pro<br /><span>999元起</span></h3>
-                        </li>
-                        <li class="child">
-                            <p>新品</p>
-                            <a href=""><img src="images/2.png"></a>
-                            <h3>红米Pro<br /><span>999元起</span></h3>
-                        </li>
-                        <li class="child">
-                            <a href=""><img src="images/3.jpg"></a>
-                            <h3>红米Pro<br /><span>999元起</span></h3>
-                        </li>
-                        <li class="child_last">
-                            <a href=""><img src="images/4.jpg"></a>
-                            <h3>红米Pro<br /><span>999元起</span></h3>
-                        </li>
-                    </ul>
-
-                </li>
-
-                <li>
-                    <a href="#">红米</a>
-                    <ul class="first_ul">
-                            <li class="child">
-                                <p>新品</p>
-                                <a href=""><img src="images/1.jpg"></a>
-                                <h3>红米Pro<br /><span>999元起</span></h3>
-                            </li>
-                            <li class="child">
-                                <p>新品</p>
-                                <a href="details.html"><img src="images/2.png"></a>
-                                <h3>红米Pro<br /><span>999元起</span></h3>
-                            </li>
-                            <li class="child">
-                                <a href=""><img src="images/3.jpg"></a>
-                                <h3>红米Pro<br /><span>999元起</span></h3>
-                            </li>
-                            <li class="child_last">
-                                <a href=""><img src="images/4.jpg"></a>
-                                <h3>红米Pro<br /><span>999元起</span></h3>
-                            </li>
-                        </ul>
-                </li>
-                <li><a href="#">笔记本</a></li>
+                <li class="li1"><a href="#">小米手机</a></li>
+                <li class="li2"><a href="#">红米</a></li>
+                <li class="li3"><a href="#">笔记本</a></li>
                 <li><a href="#">电视</a></li>
                 <li><a href="#">盒子</a></li>
                 <li><a href="#">新品</a></li>
@@ -108,7 +62,28 @@
                 <input class="text" type="text" value="">
                 <input type="submit" class="submit" value="">
             </form>
+            <ul class="first_ul">
+                <li class="child">
+                    <p>新品</p>
+                    <a href="details.html"><img src="images/1.jpg"></a>
+                    <h3>红米Pro<br /><span>999元起</span></h3>
+                </li>
+                <li class="child">
+                    <p>新品</p>
+                    <a href="details.html"><img src="images/1.jpg"></a>
+                    <h3>红米Pro<br /><span>999元起</span></h3>
+                </li>
+                <li class="child">
+                    <a href="details.html"><img src="images/1.jpg"></a>
+                    <h3>红米Pro<br /><span>999元起</span></h3>
+                </li>
+                <li class="child_last child">
+                    <a href="details.html"><img src="images/1.jpg"></a>
+                    <h3>红米Pro<br /><span>999元起</span></h3>
+                </li>
+            </ul>
         </div>
+        
 
         <div id="banner" class="swiper-container">
             <ul class="banner-left nav1">
@@ -915,9 +890,11 @@
             </div>
         </div>
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/swiper-3.4.2.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    
     <script>
         index.init();
         var mySwiper = new Swiper('.swiper-container', {

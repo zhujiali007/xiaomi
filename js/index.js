@@ -1,4 +1,4 @@
-var index = (function () {
+ var index = (function () {
     return {
         init() {
             this.$time1 = document.querySelector('.time1');
@@ -19,19 +19,27 @@ var index = (function () {
             this.setDate('2018/10/11 00:00:00');
 
         },
-        event() {
+        event(){
+
             var _this = this;
-            $("li").mouseenter(function () { 
-                $(this).children(".first_ul").stop();
-                $(this).children(".first_ul").slideDown();
+            !$(function(){
+                first_ul('.li1');
+                first_ul('.li2');
+                first_ul('.li3');
+                $(".li1,.li2,.li3,.first_ul").mouseenter(function () { 
+                    $(".first_ul").stop();
+                    $(".first_ul").slideDown();
+                });
+                            
+                $(".li1,.li2,.li3,.nav,.first_ul").mouseleave(function (e) {
+                    $(".first_ul").stop();
+                    $(".first_ul").slideUp();
+                    
+                    // values: e.clientX, e.clientY, e.pageX, e.pageY
+                });
             });
             
-            $("li").mouseleave(function (e) {
-                    $(this).children(".first_ul").stop();
-                    $(this).children(".first_ul").slideUp();
-                
-                // values: e.clientX, e.clientY, e.pageX, e.pageY
-            });
+            
             $(".li_display").hover(function () {
                 // over
                 $(this).children('.right4_box').stop();

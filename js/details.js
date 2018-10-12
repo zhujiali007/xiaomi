@@ -11,18 +11,21 @@ var details = (function () {
         },
         event() {
             var _this = this;
-            $("li").mouseenter(function () { 
-                $(this).children(".first_ul").stop();
-                $(this).children(".first_ul").slideDown();
-            });
-            
-            $("li").mouseleave(function (e) {
-                    $(this).children(".first_ul").stop();
-                    $(this).children(".first_ul").slideUp();
-                
-                // values: e.clientX, e.clientY, e.pageX, e.pageY
-                
-                
+            !$(function(){
+                first_ul('.li1');
+                first_ul('.li2');
+                first_ul('.li3');
+                $(".li1,.li2,.li3,.first_ul").mouseenter(function () { 
+                    $(".first_ul").stop();
+                    $(".first_ul").slideDown();
+                });
+                            
+                $(".li1,.li2,.li3,.nav,.first_ul").mouseleave(function (e) {
+                    $(".first_ul").stop();
+                    $(".first_ul").slideUp();
+                    
+                    // values: e.clientX, e.clientY, e.pageX, e.pageY
+                });
             });
             this.$left1.onmouseover=function(){
                 _this.$left1.style.background='#f66000 url(images/mi-home.png) no-repeat center'

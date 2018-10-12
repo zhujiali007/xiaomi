@@ -106,7 +106,7 @@
     width: 1226px;
     height: 100px;
     margin: 0 auto;
-
+    position: relative;
 }
 
 
@@ -132,8 +132,9 @@
     margin-left: 30px;
 }
 
-.center li {
+#con .center li {
     float: left;
+    border: 0;
 }
 
 .center li a {
@@ -145,23 +146,20 @@
     text-align: center;
 }
 
-.center li:nth-child(2) a {
-    position: relative;
-}
-
 .first_ul {
     width: 100%;
     height: 270px;
     position: absolute;
     background: #fff;
     left: 0;
-    top: 140px;
+    top: 100px;
     border-top: 1px solid #ccc;
     z-index: 100;
     display: none;
 }
 
 .first_ul li a {
+    display: block;
     height: 160px;
     margin-top: 40px;
     text-align: center;
@@ -238,27 +236,21 @@
 }
 
 .more .nav1 {
-    z-index: 5;
+    z-index: 100;
     width: 235px;
     height: 442px;
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     left: -85px;
     top: 100px;
+    display: none;
 }
 
 .more:hover .nav1 {
     display: block;
+    z-index: 100;
 }
 
-.nav1 {
-    width: 234px;
-    background: #490000;
-    height: 460px;
-    position: absolute;
-    z-index: 1;
-    display: none;
-}
 
 .nav1 li {
     position: relative;
@@ -295,31 +287,37 @@
     background: #ff6700;
     color: #fff;
 }
-
-.nav1 li:nth-child(2):hover .nav21 {
+.nav1 .nav12:hover .nav21 {
     display: block;
 }
 
-.nav1 .nav12 {
+
+/* .nav1 .nav12 {
     position: relative;
-}
+} */
 
 .nav1 .nav12 .nav21 {
     width: 795px;
-    height: 460px;
+    height: 442px;
     background: #fff;
     position: absolute;
     left: 234px;
-    top: -62px;
+    top: 0px;
     display: none;
     z-index: 10;
     border-top: 1px solid #b0b0b0;
 
 }
 
+.nav1 .nav12:nth-child(2) .nav21{
+	top: -62px;
+}
+
 .nav12 .nav21 .first,
 .second,
 .third {
+    width:258px;
+    height: 442px;
     float: left;
 }
 
@@ -328,7 +326,8 @@
 }
 
 .nav1 .nav21 li {
-    padding: 0;
+    padding-top:0;
+    padding-bottom: 25px;
     float: none;
 }
 
@@ -496,17 +495,17 @@
     float: left;
 }
 
-#banner .ul .li1 {
+#banner .ul .li11 {
     background: url(../images/infor3.jpg) no-repeat;
     background-size: 100% 100%;
 }
 
-#banner .ul .li2 {
+#banner .ul .li21 {
     background: url(../images/infor2.jpg) no-repeat;
     background-size: 100% 100%;
 }
 
-#banner .ul .li3 {
+#banner .ul .li31 {
     background: url(../images/infor.jpg) no-repeat;
     background-size: 100% 100%;
 }
@@ -636,26 +635,26 @@
     color: rgb(109, 109, 109);
 }
 
-#cons1 ul>.li1,
-.li2,
-.li3 {
+#cons1 ul>.li12,
+.li22,
+.li32 {
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
 
-#cons1 ul>.li4 {
+#cons1 ul>.li42 {
     border-bottom: 1px solid #ccc;
 }
 
-#cons1 ul .li5,
-#cons1 ul .li6,
-#cons1 ul .li7 {
+#cons1 ul .li52,
+#cons1 ul .li62,
+#cons1 ul .li72 {
     border-right: 1px solid #ccc;
     padding-top: 16px;
     height: 44px;
 }
 
-#cons1 ul>.li8 {
+#cons1 ul>.li82 {
     padding-top: 16px;
     height: 44px;
 }
