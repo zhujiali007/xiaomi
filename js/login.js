@@ -61,7 +61,7 @@ var login = (function () {
                         _this.loginSuccess(data);
                     }
                 }
-                sendAjax('http://localhost:1147/mi/php/login.php', params);
+                sendAjax('http://localhost:1147/mi/xiaomi/php/login.php', params);
             }
         },
         loginSuccess: function (data) {

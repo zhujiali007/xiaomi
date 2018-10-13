@@ -594,6 +594,9 @@
 .address .pp {
     color: #f66000;
 }
+.select{
+    width: 606px;float: left;
+}
 
 .bb {
     width: 100%;
@@ -797,12 +800,64 @@
     right: 20px;
     bottom: 28px;
 }
+.pro-choose .active1{font-size:16px;color: #f66000;}
 
+.cons_right .count{
+    width: 546px;
+    float: left;
+    background: rgb(249, 249, 250);
+    padding: 30px;
+    margin-top: 30px;
+}
 
-
-
-
-
+.cons_right .count li{font-size: 14px;
+color: rgb(97, 97, 97);line-height: 30px;}
+.cons_right .count li span,.cons_right .count li del{
+    font-size: 14px;
+    line-height: 30px;
+    color: rgb(97, 97, 97);
+    float: right;
+}
+.cons_right .count .total_price{
+    font-size: 24px;color: #f66000;
+    line-height: 30px;
+    padding-top: 20px;
+}
+.count_btn{
+    width: 100%;
+    float: left;
+    margin: 40px 0 40px 0;
+}
+.count_btn .jiaru{
+    display: block;
+    width: 298px;
+    height: 52px;
+    background: #f66000;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 52px;
+}
+.count_btn .jiaru:hover{
+    background-color: #f25807;
+}
+.count_btn .like{
+    display: block;
+    width: 140px;
+    height: 52px;
+    background: rgb(176, 176, 176);
+    color: #fff;
+    text-align: center;
+    line-height: 52px;
+    font-size: 16px;
+    float: left;
+}
+.count_btn .like:hover{
+    background:rgb(117, 117, 117);
+}
 
 
 

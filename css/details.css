@@ -464,12 +464,19 @@
 }
 
 #shop ul li .btn {
+    display: block;
     width: 120px;
     height: 30px;
     border: 0;
     background: #f66000;
     color: #fff;
     line-height: 30px;
+    text-align: center;
+    padding: 0;
+    margin-top: 15px;
+}
+#shop ul li .btn:hover{
+    color: #fff;
 }
 
 #banner {

@@ -12,7 +12,9 @@ var shop_data = (function () {
       this.$span = this.$bb.querySelectorAll('span')
       this.$select1 = this.$color.querySelectorAll('a')
       this.$span1 = this.$color.querySelectorAll('span')
-      console.log(this.$select_box)
+      this.$i=this.$select_box.querySelectorAll('i');
+      
+      console.log(this.$i)
       for (var i = 0;i < this.$select.length;i++) {
         this.$select[i].index = i
       }
@@ -25,9 +27,9 @@ var shop_data = (function () {
       for (var j = 0;j < this.$span1.length;j++) {
         this.$span1[j].index = j
       }
-      // for(var i=0;i<this.$first.length;i++){
-      //     this.$first[i].index=i
-      // }
+      for(var i=0;i<this.$i.length;i++){
+        this.$i[i].index=i;
+      }
       this.event()
       this.getTop()
     },
@@ -45,7 +47,6 @@ var shop_data = (function () {
         $(".li1,.li2,.li3,.nav,.first_ul").mouseleave(function (e) {
             $(".first_ul").stop();
             $(".first_ul").slideUp();
-            
             // values: e.clientX, e.clientY, e.pageX, e.pageY
         });
     });
@@ -72,7 +73,7 @@ var shop_data = (function () {
       }
       this.$color.onclick = function (e) {
         e = e || window.event
-        var target = e.target || e.srcEement
+        var target = e.target || e.srcElement
         console.log(target.nodeName)
         if (target.nodeName == 'A') {
           _this.setColor1(target.index)
@@ -85,7 +86,28 @@ var shop_data = (function () {
         // $("p").show(2000)
 
       }
+      // this.$select_box.onclick=function(e){
+      //   e=e || window .event;
+      //   var target=e.target || e.srcElement;
+      //   e.preventDefault();
+      //   console.log(target.nodeName);
+      //   if(target.nodeName=="I"){
+      //     a++;
+      //     _this.$i[target.index].className="iconfont icon-checkbox active1";
+      //     if(a%2==0){
+      //       _this.$i[target.index].className="iconfont icon-checkbox";
+      //     }
+      //   }
+        
+      // }
+      $(".icon-checkbox").click(function(){
+        $(this).toggleClass("active1");
+      })
+      
+      
     },
+
+
 
     setColor(index) {
       for (var i = 0; i < this.$select.length; i++) {
