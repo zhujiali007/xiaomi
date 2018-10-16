@@ -99,10 +99,81 @@ var shop_data = (function () {
       $(".jiaru").click(function (e) { 
         e.preventDefault();
         var a=$(".count_li1").children("p").text();
-      var b=$(".t_price").text();
-      console.log(a,b)
-      localStorage.goodsName=a;
-      localStorage.goodsPrice=b;
+        var b=$(".t_price").text();
+      
+      localStorage.setItem("goodsName",a);
+      localStorage.setItem("goodsPrice",b);
+      var a=localStorage.getItem('goodsName');
+      var b=localStorage.getItem('goodsPrice');
+      var data='<div class="item-box">'+
+            '<div class="item-row clearfix">'+
+                '<div class="col col-check">'+
+                    '<i class="iconfont icon-check J_itemCheckbox"></i>'+ 
+                '</div>'+
+                '<div class="col col-img">'+ 
+                    '<a href="" target="_blank">'+
+                        '<img alt="" src="images/show.jpg" width="80" height="80">'+ 
+                    '</a>'+ 
+                '</div>'+ 
+                '<div class="col col-name">'+  
+                    '<h3 class="name">'+
+                        '<a href="" target="_blank" class="goods_name">'+ 
+                            a+ 
+                        '</a>'+  
+                    '</h3>'+     
+                '</div>'+ 
+                '<div class="col col-price col-prices">'+b+'</div>'+ 
+                '<div class="col col-num">'+  
+                    '<div class="change-goods-num J_changeGoodsNum">'+ 
+                        '<a href="javascript:void(0)" class="J_minus">'+
+                            '<i class="iconfont icon-jian" id="J_selectAll"></i>'+
+                        '</a>'+ 
+                        '<input tyep="text" value="1" autocomplete="off" class="goods-num J_goodsNum">'+ 
+                        '<a href="javascript:void(0)" class="J_plus">'+
+                            '<i class="iconfont icon-jia" id="J_selectAll"></i>'+
+                        '</a>'+
+                    '</div>'+  
+                '</div>'+ 
+                    '<div class="col col-total col-t col-a">'+b+'</div>'+ 
+                    '<div class="col col-action">'+ 
+                        '<a href="javascript:void(0);" title="删除" class="del J_delGoods">'+
+                            '<i class="iconfont icon-cuowu1" id="J_selectAll"></i>'+
+                        '</a>'+
+                    '</div>'+ 
+            '</div>'+ 
+            '<div class="item-sub-box">'+
+                        '<div class="item-row clearfix">'+ 
+                            '<div class="col col-img">'+ 
+                                '<span class="icon-activity icon-activity-reduction"></span>'+ 
+                            '</div>'+ 
+                            '<div class="col col-name">'+ 
+                                '<h3 class="name">'+ 
+                                    '秒杀优惠 100元'+ 
+                                '</h3>'+ 
+                            '</div>'+ 
+                            '<div class="col col-price">'+ 
+                                '-100元'+ 
+                            '</div>'+ 
+                            '<div class="col col-num">1</div>'+ 
+                            '<div class="col col-total col-t">-100元</div>'+ 
+                            '<div class="col col-action"></div>'+ 
+                        '</div>'+ 
+                    '<i class="arrow arrow1"></i>'+ 
+            '</div>'+
+            '<div class="item-sub-box J_service">'+
+                '<div class="extend-buy">'+ 
+                    '<i class="iconfont icon-plus"></i>'+
+                    '<p>意外保障服务 179元</p>'+   
+                    '<a href="" target="_blank" class="agreement">了解保障服务 &gt;</a>'+  
+                '</div>'+    
+                '<div class="extend-buy">'+ 
+                    '<i class="iconfont icon-plus"></i>'+
+                    '<p>碎屏保障服务 99元</p>'+   
+                    '<a href="" target="_blank" class="agreement">了解保障服务 &gt;</a>'+ 
+                '</div>'+   
+            '</div>'+
+      '</div>'
+      localStorage.setItem("val",data);
       location.href="shop_list.html"
       });
       

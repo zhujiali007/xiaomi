@@ -8,7 +8,13 @@ var shop_list=(function(){
             $(".goods_name").text(localStorage.goodsName);
             $(".col-prices").text(localStorage.goodsPrice);
             $(".col-t").text(localStorage.goodsPrice);
+            var a=localStorage.getItem('goodsName');
+            var b=localStorage.getItem('goodsPrice');
+            var c=localStorage.getItem("val");
+            // console.log(b);
             
+            $(".list-body").prepend(c);
+            // console.log(localStorage.data)
             // console.log(a);
             //选中按钮
             $('.icon-check').click(function (e) { 
@@ -33,6 +39,7 @@ var shop_list=(function(){
             $(".icon-cuowu1").click(function (e) { 
                 e.preventDefault();
                 $(this).parent().parent().parent().parent(".item-box").remove()
+                
             });
             
             //增减功能
@@ -49,6 +56,7 @@ var shop_list=(function(){
                 var a=$(this).parent().parent().parent(".col-num").prev().text();
                 var total=parseInt($(".goods-num").val())*parseFloat(a);
                 $(this).parent().parent().parent(".col-num").next().text(total+"元")
+                // $("#J_cartTotalPrice").text($(".col-t)")
                 // console.log(b);
             });
             $(".icon-jia").click(function (e) { 
@@ -59,7 +67,7 @@ var shop_list=(function(){
                 var a=$(this).parent().parent().parent(".col-num").prev().text();
                 var total=parseInt($(".goods-num").val())*parseFloat(a);
                 $(this).parent().parent().parent(".col-num").next().text(total+"元")              
-                
+                // $("#J_cartTotalPrice").text($(".col-t)")
                 console.log(total)
             });
             
