@@ -287,6 +287,7 @@
     background: #ff6700;
     color: #fff;
 }
+
 .nav1 .nav12:hover .nav21 {
     display: block;
 }
@@ -309,14 +310,14 @@
 
 }
 
-.nav1 .nav12:nth-child(2) .nav21{
-	top: -62px;
+.nav1 .nav12:nth-child(2) .nav21 {
+    top: -62px;
 }
 
 .nav12 .nav21 .first,
 .second,
 .third {
-    width:258px;
+    width: 258px;
     height: 442px;
     float: left;
 }
@@ -326,7 +327,7 @@
 }
 
 .nav1 .nav21 li {
-    padding-top:0;
+    padding-top: 0;
     padding-bottom: 25px;
     float: none;
 }
@@ -594,8 +595,10 @@
 .address .pp {
     color: #f66000;
 }
-.select{
-    width: 606px;float: left;
+
+.select {
+    width: 606px;
+    float: left;
 }
 
 .bb {
@@ -609,11 +612,11 @@
     font-weight: 400;
 }
 
-.bb ul li {
+.bb ul a {
     float: left;
 }
 
-.bb ul li a {
+.bb ul a {
     display: block;
     width: 244px;
     height: 42px;
@@ -624,21 +627,21 @@
     margin-top: 15px;
 }
 
-.bb ul li:nth-child(2n) a {
+.bb ul a:nth-child(2n) {
     margin-left: 5px;
 }
 
-.bb li span {
+.bb a span {
     display: block;
     font-size: 16px;
     line-height: 42px;
 }
 
-.bb li .xh {
+.bb a .xh {
     color: rgb(51, 51, 51);
 }
 
-.bb li .price {
+.bb a .price {
     color: rgb(176, 176, 176);
 }
 
@@ -662,11 +665,11 @@
     font-weight: 400;
 }
 
-.color ul li {
+.color ul a {
     float: left;
 }
 
-.color ul li a {
+.color ul a {
     display: block;
     width: 244px;
     height: 42px;
@@ -678,11 +681,11 @@
     position: relative;
 }
 
-.color ul li:nth-child(2n) a {
+.color ul a:nth-child(2n) {
     margin-left: 5px;
 }
 
-.color ul li a .circle {
+.color ul a .circle {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -690,12 +693,12 @@
     left: 27px;
 }
 
-.color ul li a .circle img {
+.color ul a .circle img {
     width: 100%;
     height: 100%;
 }
 
-.color ul li a span {
+.color ul a span {
     font-size: 16px;
     color: rgb(51, 51, 51);
     line-height: 44px;
@@ -734,11 +737,14 @@
 .pro-choose ul li {
     width: 604px;
     float: left;
-    padding:30px 0;
+    padding: 30px 0;
     border: 1px solid #ccc;
     position: relative;
 }
-.pro-choose ul li:first-child{border-bottom: 0;}
+
+.pro-choose ul li:first-child {
+    border-bottom: 0;
+}
 
 .pro-choose i {
     font-size: 16px;
@@ -800,9 +806,13 @@
     right: 20px;
     bottom: 28px;
 }
-.pro-choose .active1{font-size:16px;color: #f66000;}
 
-.cons_right .count{
+.pro-choose .active1 {
+    font-size: 16px;
+    color: #f66000;
+}
+
+.cons_right .count {
     width: 546px;
     float: left;
     background: rgb(249, 249, 250);
@@ -810,25 +820,36 @@
     margin-top: 30px;
 }
 
-.cons_right .count li{font-size: 14px;
-color: rgb(97, 97, 97);line-height: 30px;}
-.cons_right .count li span,.cons_right .count li del{
+/* .cons_right .count li{float: left;} */
+#cons .cons_right .count li p,
+#cons .cons_right .count li p span {
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+    line-height: 30px;
+}
+
+.cons_right .count .count_li1 span,
+.cons_right .count .count_li1 del {
     font-size: 14px;
     line-height: 30px;
     color: rgb(97, 97, 97);
     float: right;
 }
-.cons_right .count .total_price{
-    font-size: 24px;color: #f66000;
+
+.cons_right .count .total_price {
+    font-size: 24px;
+    color: #f66000;
     line-height: 30px;
     padding-top: 20px;
 }
-.count_btn{
+
+.count_btn {
     width: 100%;
     float: left;
     margin: 40px 0 40px 0;
 }
-.count_btn .jiaru{
+
+.count_btn .jiaru {
     display: block;
     width: 298px;
     height: 52px;
@@ -841,10 +862,12 @@ color: rgb(97, 97, 97);line-height: 30px;}
     text-align: center;
     line-height: 52px;
 }
-.count_btn .jiaru:hover{
+
+.count_btn .jiaru:hover {
     background-color: #f25807;
 }
-.count_btn .like{
+
+.count_btn .like {
     display: block;
     width: 140px;
     height: 52px;
@@ -855,8 +878,9 @@ color: rgb(97, 97, 97);line-height: 30px;}
     font-size: 16px;
     float: left;
 }
-.count_btn .like:hover{
-    background:rgb(117, 117, 117);
+
+.count_btn .like:hover {
+    background: rgb(117, 117, 117);
 }
 
 

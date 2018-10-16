@@ -1,0 +1,76 @@
+{
+    "msg": 200,
+    "data": [{
+            "id": 1,
+            "goodsName": "4G+64G",
+            "goodsPrice": "1699元",
+            "goodsColor": "亮红"
+        },
+        {
+            "id": 2,
+            "goodsName": "4G+64G",
+            "goodsPrice": "1699元",
+            "goodsColor": "亮蓝"
+        },
+        {
+            "id": 3,
+            "goodsName": "4G+64G",
+            "goodsPrice": "1699元",
+            "goodsColor": "金色"
+        },
+        {
+            "id": 4,
+            "goodsName": "4G+64G",
+            "goodsPrice": "1699元",
+            "goodsColor": "黑色"
+        },
+        {
+            "id": 5,
+            "goodsName": "6G+64G",
+            "goodsPrice": "1899元",
+            "goodsColor": "亮红"
+        },
+        {
+            "id": 6,
+            "goodsName": "6G+64G",
+            "goodsPrice": "1899元",
+            "goodsColor": "亮蓝"
+        },
+        {
+            "id": 7,
+            "goodsName": "6G+64G",
+            "goodsPrice": "1899元",
+            "goodsColor": "金色"
+        },
+        {
+            "id": 8,
+            "goodsName": "6G+64G",
+            "goodsPrice": "1899元",
+            "goodsColor": "黑色"
+        },
+        {
+            "id": 9,
+            "goodsName": "6G+128G",
+            "goodsPrice": "2199元",
+            "goodsColor": "亮红"
+        },
+        {
+            "id": 10,
+            "goodsName": "6G+128G",
+            "goodsPrice": "2199元",
+            "goodsColor": "亮蓝"
+        },
+        {
+            "id": 11,
+            "goodsName": "6G+128G",
+            "goodsPrice": "2199元",
+            "goodsColor": "金色"
+        },
+        {
+            "id": 12,
+            "goodsName": "6G+128G",
+            "goodsPrice": "2199元",
+            "goodsColor": "黑色"
+        }
+    ]
+}

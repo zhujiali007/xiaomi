@@ -5,6 +5,11 @@ var shop_list=(function(){
         },
         event(){
             var _this = this;
+            $(".goods_name").text(localStorage.goodsName);
+            $(".col-prices").text(localStorage.goodsPrice);
+            $(".col-t").text(localStorage.goodsPrice);
+            
+            // console.log(a);
             //选中按钮
             $('.icon-check').click(function (e) { 
                 e.preventDefault();
@@ -12,13 +17,16 @@ var shop_list=(function(){
                 // var a=jQuery.inArray('icon-active',$("i"))
                 // console.log(a);
                 if($(this).is(".icon-active")){
-                    console.log(1);
+                    // console.log(1);
                     $(".no-select-tip").addClass("hide");
                     $(".btn-primary").removeClass("btn-a");
+                    var a=$(this).parents(".item-row").children(".col-a").text();
+                    $("#J_cartTotalPrice").text(a);
                 }else{
-                    console.log(2);
+                    // console.log(2);
                     $(".no-select-tip").removeClass("hide");
                     $(".btn-primary").addClass("btn-a");
+                    $("#J_cartTotalPrice").text(0)
                 }  
             });
             //删除按钮
@@ -51,9 +59,10 @@ var shop_list=(function(){
                 var a=$(this).parent().parent().parent(".col-num").prev().text();
                 var total=parseInt($(".goods-num").val())*parseFloat(a);
                 $(this).parent().parent().parent(".col-num").next().text(total+"元")              
+                
                 console.log(total)
             });
-
+            
             
 
               

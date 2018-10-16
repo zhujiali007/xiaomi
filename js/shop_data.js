@@ -13,8 +13,10 @@ var shop_data = (function () {
       this.$select1 = this.$color.querySelectorAll('a')
       this.$span1 = this.$color.querySelectorAll('span')
       this.$i=this.$select_box.querySelectorAll('i');
-      
-      console.log(this.$i)
+      this.$right_top=document.querySelector('.right_top');
+      this.$right_span=this.$right_top.querySelector('span');
+      this.$price=this.$bb.querySelectorAll('.price')
+      // console.log(this.$price)
       for (var i = 0;i < this.$select.length;i++) {
         this.$select[i].index = i
       }
@@ -56,86 +58,55 @@ var shop_data = (function () {
       this.$left1.onmouseleave = function () {
         _this.$left1.style.background = '#f66000 url(images/mi-logo.png) no-repeat center'
       }
-      this.$bb.onclick = function (e) {
-        e = e || window.event
-        var target = e.target || e.srcEement
-        console.log(target.nodeName)
-        if (target.nodeName == 'A') {
-          _this.setColor(target.index)
-        }
 
-        if (target.nodeName == 'SPAN') {
-            _this.setColor_span(target.index)
-        }
-        // $("h2").show(2000)
-        // $("p").show(2000)
 
-      }
-      this.$color.onclick = function (e) {
-        e = e || window.event
-        var target = e.target || e.srcElement
-        console.log(target.nodeName)
-        if (target.nodeName == 'A') {
-          _this.setColor1(target.index)
-        }
+      $(".aa").click(function (e) { 
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+        var a=$(this).children('.price').text();
+        $(".right_top").children("span").text(a);
+        $(".count_li1").children("span").text(a);
+        $(".total_price").children(".t_price").text(a);
+        var b=$(this).children('.xh').text();
+        $(".count_li1").children("p").children(".count_type").text(b);
+      });
 
-        if (target.nodeName == 'SPAN') {
-            _this.setColor_span1(target.index)
-        }
-        // $("h2").show(2000)
-        // $("p").show(2000)
+      $(".aa1").click(function (e) { 
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+        var c=$(this).children('.c_color').text();
+        $(".count_li1").children("p").children('.count_color').text(c);
+      });
 
-      }
-      // this.$select_box.onclick=function(e){
-      //   e=e || window .event;
-      //   var target=e.target || e.srcElement;
-      //   e.preventDefault();
-      //   console.log(target.nodeName);
-      //   if(target.nodeName=="I"){
-      //     a++;
-      //     _this.$i[target.index].className="iconfont icon-checkbox active1";
-      //     if(a%2==0){
-      //       _this.$i[target.index].className="iconfont icon-checkbox";
-      //     }
-      //   }
-        
-      // }
       $(".icon-checkbox").click(function(){
-        $(this).toggleClass("active1");
+        $(this).toggleClass("active1")
+        $(this).parents("li").children($(".icon-checkbox")).toggleClass("active1");
+        // $(this).parents("li").children($("div")).children(".icon-checkbox").toggleClass("active1");
+        var a=$(".total_price").children(".t_price").text();
+        var b=$(this).parents("li").children("div").children(".price").text();
+        console.log(b)
+        if($(".icon-checkbox").is($(".active1"))){
+          var c=parseFloat(a)+parseFloat(b);
+        $(".total_price").children(".t_price").text(parseFloat(c))
+        console.log(c);
+        }else if(!$(".icon-checkbox").is($(".active1"))){
+          var c=parseFloat(a)-parseFloat(b);
+          $(".total_price").children(".t_price").text(parseFloat(c));
+        }
+        
       })
+
+      $(".jiaru").click(function (e) { 
+        e.preventDefault();
+        var a=$(".count_li1").children("p").text();
+      var b=$(".t_price").text();
+      console.log(a,b)
+      localStorage.goodsName=a;
+      localStorage.goodsPrice=b;
+      location.href="shop_list.html"
+      });
       
       
-    },
-
-
-
-    setColor(index) {
-      for (var i = 0; i < this.$select.length; i++) {
-          this.$select[i].removeAttribute('class')
-      }
-          
-      this.$select[index].className = 'active'
-    },
-    setColor1(index) {
-        for (var i = 0; i < this.$select1.length; i++) {
-            this.$select1[i].removeAttribute('class')
-        }
-            
-        this.$select1[index].className = 'active'
-      },
-    setColor_span(index){
-        for (var i = 0; i < this.$span.length; i++) {
-            this.$span[i].parentNode.removeAttribute('class')
-        }
-        this.$span[index].parentNode.className = 'active'
-
-    },
-    setColor_span1(index){
-        for (var i = 0; i < this.$span1.length; i++) {
-            this.$span1[i].parentNode.removeAttribute('class')
-        }
-        this.$span1[index].parentNode.className = 'active'
-
     },
 
 
