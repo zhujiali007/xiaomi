@@ -16,7 +16,8 @@ var shop_data = (function () {
       this.$right_top=document.querySelector('.right_top');
       this.$right_span=this.$right_top.querySelector('span');
       this.$price=this.$bb.querySelectorAll('.price')
-      // console.log(this.$price)
+      this.$swiper=document.querySelector('.swiper-product')
+      // console.log(this.$swiper)
       for (var i = 0;i < this.$select.length;i++) {
         this.$select[i].index = i
       }
@@ -183,8 +184,9 @@ var shop_data = (function () {
 
     getTop() {
       var _this = this
-      var _top = this.$shop.offsetTop
-      // console.log(_top)
+      var _top = this.$shop.offsetTop;
+      var _top1=this.$swiper.offsetTop;
+      console.log(_top1);
       window.onscroll = function () {
         var top = document.documentElement.scrollTop
         // console.log(top)
@@ -192,6 +194,13 @@ var shop_data = (function () {
           _this.$shop.style.top = top + 'px'
         }else {
           _this.$shop.style.top = _top + 'px'
+        }
+        if(top>_top1){
+          _this.$swiper.style.top=top + 'px';
+        }
+        if(top>820){
+          console.log(top);
+          _this.$swiper.style.top=820 + 'px';
         }
       }
     }

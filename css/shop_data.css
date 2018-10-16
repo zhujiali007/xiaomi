@@ -486,12 +486,15 @@
     width: 1226px;
     margin: 0 auto;
     background: #fff;
+    position: relative;
 }
 
 #cons .swiper-product {
     width: 560px;
     height: 560px;
     float: left;
+    position: absolute;
+    top: 0;
 }
 
 #cons .swiper-product img {

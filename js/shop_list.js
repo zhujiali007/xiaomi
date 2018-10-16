@@ -39,7 +39,7 @@ var shop_list=(function(){
             $(".icon-cuowu1").click(function (e) { 
                 e.preventDefault();
                 $(this).parent().parent().parent().parent(".item-box").remove()
-                
+                // localStorage.removeItem("val");
             });
             
             //增减功能
@@ -56,7 +56,7 @@ var shop_list=(function(){
                 var a=$(this).parent().parent().parent(".col-num").prev().text();
                 var total=parseInt($(".goods-num").val())*parseFloat(a);
                 $(this).parent().parent().parent(".col-num").next().text(total+"元")
-                // $("#J_cartTotalPrice").text($(".col-t)")
+                $("#J_cartTotalPrice").text(total+'元')
                 // console.log(b);
             });
             $(".icon-jia").click(function (e) { 
@@ -67,7 +67,7 @@ var shop_list=(function(){
                 var a=$(this).parent().parent().parent(".col-num").prev().text();
                 var total=parseInt($(".goods-num").val())*parseFloat(a);
                 $(this).parent().parent().parent(".col-num").next().text(total+"元")              
-                // $("#J_cartTotalPrice").text($(".col-t)")
+                $("#J_cartTotalPrice").text(total+'元')
                 console.log(total)
             });
             
