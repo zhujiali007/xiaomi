@@ -16,7 +16,7 @@
             }
             var timer = '';
             this.event();
-            this.setDate('2018/10/11 00:00:00');
+            this.setDate('2018/10/30 00:00:00');
 
         },
         event(){
